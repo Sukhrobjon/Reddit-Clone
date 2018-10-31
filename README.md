@@ -1,4 +1,4 @@
 # Reddit.js 
-- Backend tutorial at Make school for cloning reddit 
+- Backend tutorial at Make school tutorail of cloning reddit 
 
 ## Description
