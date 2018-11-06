@@ -1,0 +1,2 @@
+- To create a post using req.body - we need to install body parser npm model by following command:
+    => npm install body-parser --save
