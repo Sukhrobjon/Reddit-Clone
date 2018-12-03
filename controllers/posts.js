@@ -19,7 +19,9 @@ module.exports = app => {
          // SAVE INSTANCE OF POST MODEL TO DB
          post.save((err, post) => {
              // REDIRECT TO THE ROOT
+             console.log(req.body)
              return res.redirect(`/`);
+            
          })
      })
 };
