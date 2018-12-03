@@ -3,6 +3,9 @@ const app = express()
 var exphbs = require('express-handlebars');
 const expressValidator = require('express-validator')
 const port = process.env.PORT || 3000 
+
+// Set db
+require('./data/reddit-db');
 // controller
 require('./controllers/posts.js')(app);
 
