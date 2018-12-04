@@ -1,14 +1,18 @@
 <h1>Posts</h1>
 
 <a href="/posts/new">New Post</a>
+<div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+        <ul>
+            {{#each post}}
+            <li class="list-group-item">
+                <div class="lead">
+                    <a href="/posts/{{this._id}}" class="lead">{{this.title}}</a>
+                </div>
+                <a href="{{this.url}}" target="_blank">{{this.url}}<a>
+            </li>
+            {{/each}}
+        </ul>
 
-<ul>
-    {{#each post}}
-    <li class="list-group-item">
-        <div class="lead">
-            <a href="/posts/{{this._id}}" class="lead">{{this.title}}</a>
-        </div>
-        <a href="{{this.url}}" target="_blank">{{this.url}}<a>
-    </li>
-    {{/each}}
-</ul>
+    </div>
+</div>

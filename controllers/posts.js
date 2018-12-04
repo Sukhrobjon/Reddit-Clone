@@ -30,6 +30,17 @@ module.exports = function(app) {
         })
     })
 
+    // Show single post
+    app.get('/posts/:id', function(req, res) {
+        Post.findById(req.params.id)
+            .then(post => {
+                res.render('post-show', { post });
+            })
+            .catch(err => {
+                console.log(err.message)
+            });
+    });
+
     // SIGN UP FORM
     app.get("/sign-up", (req, res) => {
         res.render("sign-up");
