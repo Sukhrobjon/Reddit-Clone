@@ -22,7 +22,7 @@ describe("site", () => {
     });
 });
 // requires to get server
-// const server = require('../server')
+const server = require('../server')
 
 describe("Post", () => {
     it("should create with valid attributes at POST /posts", done => {
@@ -35,7 +35,7 @@ describe("Post", () => {
             Post.find(function (err, posts) {
                 var postCount = posts.length;
                 chai
-                    .request('localhost:3000')
+                    .request(server)
                     .post("/posts/new")
                     .send(post)
                     .then(res => {
