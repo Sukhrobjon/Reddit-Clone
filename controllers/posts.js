@@ -34,7 +34,9 @@ module.exports = function(app) {
     app.get('/posts/:id', function(req, res) {
         Post.findById(req.params.id)
             .then(post => {
-                res.render('post-show', { post });
+                res.render('post-show', {
+                    post
+                });
             })
             .catch(err => {
                 console.log(err.message)
