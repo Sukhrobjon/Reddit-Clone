@@ -4,13 +4,13 @@
 ## Description
 ### TODO-LIST
 
-* [ ] Create a post
-    * [ ] Make a posts#new route (/posts/new) and template (posts-new.handlebars)
-    * [ ] Add form to posts-new template
-    * [ ] Make create posts route and check that form data is sending to new route
-    * [ ] Add Post model with mongoose
-    * [ ] Confirm posts are saving to database
-* [ ] Show all posts
+* [X] Create a post
+    * [X] Make a posts#new route (/posts/new) and template (posts-new.handlebars)
+    * [X] Add form to posts-new template
+    * [X] Make create posts route and check that form data is sending to new route
+    * [X] Add Post model with mongoose
+    * [X] Confirm posts are saving to database
+* [X] Show all posts
 * [ ] Comment on posts
 * [ ] Create subreddits
 * [ ] Create a post on a subreddit
